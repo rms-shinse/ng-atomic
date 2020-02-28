@@ -1,12 +1,15 @@
-import { NgModule } from '@angular/core';
-import { UiComponent } from './ui.component';
-
-
+import { NgModule } from "@angular/core";
+import { HeaderComponent } from "./components/organisms/header/header.component";
+import { RepositoryCardComponent } from "./components/molecules/repository-card/repository-card.component";
+import { TemplateProfilePageComponent } from "./components/templates/template-profile-page/template-profile-page.component";
 
 @NgModule({
-  declarations: [UiComponent],
-  imports: [
+  declarations: [
+    HeaderComponent,
+    RepositoryCardComponent,
+    TemplateProfilePageComponent
   ],
-  exports: [UiComponent]
+  imports: [],
+  exports: [TemplateProfilePageComponent]
 })
-export class UiModule { }
+export class UiModule {}

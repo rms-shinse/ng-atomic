@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    flex-basis: 30%;
+  }
+
+  .right {
+    flex-basis: 60%;
+  }
+
+  .repositories {
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .item {
+        flex-basis: 45%;
+        margin: 0.5rem;
+      }
+    }
+  }
+}

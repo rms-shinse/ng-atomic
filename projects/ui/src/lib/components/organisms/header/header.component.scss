@@ -1,0 +1,13 @@
+header {
+  min-height: 3rem;
+  line-height: 3rem;
+  color: hsla(0, 0%, 100%, .7);
+  background-color: #24292e;
+
+  li {
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    padding-right: 1rem;
+  }
+}
