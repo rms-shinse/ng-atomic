@@ -1,0 +1,45 @@
+<ui-header></ui-header>
+<div class="container">
+  <div class="left">
+    <div class="profile">
+      <img
+        src="https://avatars1.githubusercontent.com/u/49220854?s=460&v=4"
+        alt="sizer"
+      />
+      <div class="comment"><span>be the first penguin</span></div>
+    </div>
+    <div class="name">
+      <div class="real">
+        <span>{{ props.name }}</span>
+      </div>
+      <div class="nickname">
+        <span>{{ props.nickname }}</span>
+      </div>
+    </div>
+    <div class="button-container"><button>Edit Profile</button></div>
+  </div>
+  <div class="right">
+    <nav>
+      <ul>
+        <li>
+          <span>Overview</span>
+        </li>
+        <li><span>Repositories</span><span>12</span></li>
+        <li><span>Projects</span><span>0</span></li>
+      </ul>
+    </nav>
+    <div class="repositories">
+      <div class="info">
+        <span>Popular repositories</span>
+      </div>
+      <div class="list">
+        <ui-repository-card
+          class="item"
+          *ngFor="let repo of props.repositories"
+          [name]="repo"
+        ></ui-repository-card>
+      </div>
+    </div>
+  </div>
+</div>
+<footer></footer>
