@@ -9,8 +9,12 @@
       <div class="comment"><span>be the first penguin</span></div>
     </div>
     <div class="name">
-      <div class="real"><span>Shinse Tanak</span></div>
-      <div class="nickname"><span>rms-shinse</span></div>
+      <div class="real">
+        <span>{{ props.name }}</span>
+      </div>
+      <div class="nickname">
+        <span>{{ props.nickname }}</span>
+      </div>
     </div>
     <div class="button-container"><button>Edit Profile</button></div>
   </div>
@@ -29,12 +33,11 @@
         <span>Popular repositories</span>
       </div>
       <div class="list">
-        <ui-repository-card class="item"></ui-repository-card>
-        <ui-repository-card class="item"></ui-repository-card>
-        <ui-repository-card class="item"></ui-repository-card>
-        <ui-repository-card class="item"></ui-repository-card>
-        <ui-repository-card class="item"></ui-repository-card>
-        <ui-repository-card class="item"></ui-repository-card>
+        <ui-repository-card
+          class="item"
+          *ngFor="let repo of props.repositories"
+          [name]="repo"
+        ></ui-repository-card>
       </div>
     </div>
   </div>
